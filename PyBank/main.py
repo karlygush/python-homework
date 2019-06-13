@@ -1,4 +1,4 @@
-Financial_Records = {
+financial_records = {
     "Jan-2010" : 867884,
     "Feb-2010" : 984655,
     "Mar-2010" : 322013,
@@ -86,4 +86,10 @@ Financial_Records = {
     "Jan-2017" : 138230,
     "Feb-2017" : 671099
 }
-print(Financial_Records)
+for key, value in financial_records.items():
+    print(f"Key: {key} Value: {value}")
+    print()
+for month_year, profits_losses in financial_records.items():
+    print(f"Date: {month_year} | Profits: {profits_losses}")
+print("Total sum of profits in the dictionary:")
+print(sum(financial_records.values()))
