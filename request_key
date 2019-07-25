@@ -1,0 +1,5 @@
+export QUANDL_API_KEY="LE9TxPRpvKnx9JyEz8k8"
+
+. ./keys.sh
+
+echo $QUANDL_API_KEY
